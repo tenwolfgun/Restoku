@@ -64,8 +64,14 @@ class _OrderDetailState extends State<OrderDetail> {
       body: Container(
         child: Stack(
           children: [
-            Positioned.fill(
+            Positioned(
+              bottom: MediaQuery.of(context).size.height * .2,
+              left: 0,
+              right: 0,
+              top: 0,
               child: ListView(
+                padding: EdgeInsets.only(bottom: 80),
+                shrinkWrap: true,
                 children: <Widget>[
                   Container(
                     height: 5,
@@ -82,6 +88,7 @@ class _OrderDetailState extends State<OrderDetail> {
                   //   ),
                   // ),
                   ListView.builder(
+                    physics: ClampingScrollPhysics(),
                     padding: EdgeInsets.only(
                       left: 16,
                       right: 16,
@@ -222,26 +229,64 @@ class _OrderDetailState extends State<OrderDetail> {
                     Padding(
                       padding:
                           const EdgeInsets.only(left: 8, right: 8, bottom: 8),
-                      child: RaisedButton(
-                        onPressed: () async {
-                          if (jumlahBayar < harga) {
-                            showFloatingFlushbar(context);
-                          } else {
-                            showSuccess(context);
-                            await Future.delayed(Duration(seconds: 2));
-                            Navigator.pushReplacement(
-                              context,
-                              MaterialPageRoute(
-                                builder: (context) => HomeMenu(),
+                      child: Row(
+                        children: <Widget>[
+                          Expanded(
+                            child: Padding(
+                              padding:
+                                  const EdgeInsets.only(right: 4, left: 10),
+                              child: RaisedButton(
+                                onPressed: () async {
+                                  showFloatingFlushbar(context, "Info",
+                                      "Transaksi anda berhasil dibatalkan");
+
+                                  await Future.delayed(Duration(seconds: 2));
+                                  Navigator.pushReplacement(
+                                    context,
+                                    MaterialPageRoute(
+                                      builder: (context) => HomeMenu(),
+                                    ),
+                                  );
+                                },
+                                child: Text(
+                                  "BATAL",
+                                  style: TextStyle(color: Colors.white),
+                                ),
+                                color: Colors.red,
                               ),
-                            );
-                          }
-                        },
-                        child: Text(
-                          "BAYAR SEKARANG",
-                          style: TextStyle(color: Colors.white),
-                        ),
-                        color: Colors.green,
+                            ),
+                          ),
+                          Expanded(
+                            child: Padding(
+                              padding:
+                                  const EdgeInsets.only(right: 10, left: 4),
+                              child: RaisedButton(
+                                onPressed: () async {
+                                  if (jumlahBayar < harga) {
+                                    showFloatingFlushbar(
+                                        context,
+                                        "Pembayaran gagal",
+                                        "Uang anda tidak cukup untuk melakukan transaksi ini");
+                                  } else {
+                                    showSuccess(context);
+                                    await Future.delayed(Duration(seconds: 2));
+                                    Navigator.pushReplacement(
+                                      context,
+                                      MaterialPageRoute(
+                                        builder: (context) => HomeMenu(),
+                                      ),
+                                    );
+                                  }
+                                },
+                                child: Text(
+                                  "BAYAR SEKARANG",
+                                  style: TextStyle(color: Colors.white),
+                                ),
+                                color: Colors.green,
+                              ),
+                            ),
+                          ),
+                        ],
                       ),
                     ),
                   ],
@@ -254,7 +299,7 @@ class _OrderDetailState extends State<OrderDetail> {
     );
   }
 
-  void showFloatingFlushbar(BuildContext context) {
+  void showFloatingFlushbar(BuildContext context, String title, message) {
     Flushbar(
       duration: Duration(seconds: 1),
       isDismissible: true,
@@ -277,8 +322,8 @@ class _OrderDetailState extends State<OrderDetail> {
       dismissDirection: FlushbarDismissDirection.HORIZONTAL,
       // The default curve is Curves.easeOut
       forwardAnimationCurve: Curves.fastLinearToSlowEaseIn,
-      title: 'Pembayaran gagal',
-      message: 'Uang anda tidak cukup untuk melakukan pembelian ini',
+      title: title,
+      message: message,
     )..show(context);
   }
 

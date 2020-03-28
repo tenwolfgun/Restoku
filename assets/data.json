@@ -16,79 +16,79 @@
             "id": "3",
             "nama": "Cumi Cabe Goreng",
             "harga": 70000,
-            "gambar": "https://i.pinimg.com/originals/4c/34/eb/4c34ebac67877fa6c89a1633a875537a.jpg"
+            "gambar": "https://cdn1-production-images-kly.akamaized.net/DGDSb2muHFKC-tQhAfdw9TMgb88=/640x360/smart/filters:quality(75):strip_icc():format(jpeg)/kly-media-production/medias/2394430/original/051825000_1540736203-CUMI_GORENG_CABAI_KERING_1.jpg"
         },
         {
             "id": "4",
             "nama": "Cah Kailan",
-            "harga": 53000,
-            "gambar": "https://selerasa.com/wp-content/uploads/2015/08/images_ikan_resep_cumi_15.jpg"
+            "harga": 12000,
+            "gambar": "https://www.masakapahariini.com/wp-content/uploads/2019/01/tumis-kailan-bawang-putih-780x440.jpg"
         },
         {
             "id": "5",
             "nama": "Tahu Goreng",
-            "harga": 45000,
-            "gambar": "https://i.pinimg.com/originals/4c/34/eb/4c34ebac67877fa6c89a1633a875537a.jpg"
+            "harga": 15000,
+            "gambar": "https://craftlog.com/m/i/10571456=s1280=h960"
         },
         {
             "id": "6",
             "nama": "Cah Tauge",
-            "harga": 53000,
-            "gambar": "https://selerasa.com/wp-content/uploads/2015/08/images_ikan_resep_cumi_15.jpg"
+            "harga": 33000,
+            "gambar": "https://cdn02.indozone.id/re/content/2019/11/21/mns9oL/t_5dd646c5d8146.jpg?w=700&q=85"
         },
         {
             "id": "7",
             "nama": "Kerang Bambu Asam Manis",
-            "harga": 45000,
-            "gambar": "https://i.pinimg.com/originals/4c/34/eb/4c34ebac67877fa6c89a1633a875537a.jpg"
+            "harga": 70000,
+            "gambar": "https://4.bp.blogspot.com/-1wjjpb5wc7k/W94tiaJvw0I/AAAAAAAABEE/mIFUvhvp0KoEOO-OpiAaw-pX-CdljfVlQCLcBGAs/s1600/Tips%2BMemasak%2BKerang%2BBambu%2BBumbu%2BRujak%2B%2528twitter.com%2529.jpg"
         },
         {
             "id": "8",
             "nama": "Kepiting Saus Padang",
-            "harga": 53000,
-            "gambar": "https://selerasa.com/wp-content/uploads/2015/08/images_ikan_resep_cumi_15.jpg"
+            "harga": 93000,
+            "gambar": "https://cdn0-production-images-kly.akamaized.net/6VN38OV7w5inOhCte2JPWnUjPmA=/640x360/smart/filters:quality(75):strip_icc():format(jpeg)/kly-media-production/medias/2355329/original/078016000_1536562953-resep-masakan-sehari-hari.jpg"
         },
         {
             "id": "9",
             "nama": "Gurame Asam Pedas",
-            "harga": 45000,
-            "gambar": "https://i.pinimg.com/originals/4c/34/eb/4c34ebac67877fa6c89a1633a875537a.jpg"
+            "harga": 75000,
+            "gambar": "https://asset-a.grid.id/crop/0x0:0x0/700x465/photo/sasefoto/original/38246_ikan-gurame-asam-pedas.jpg"
         },
         {
             "id": "10",
             "nama": "Udang Bakar",
-            "harga": 53000,
-            "gambar": "https://selerasa.com/wp-content/uploads/2015/08/images_ikan_resep_cumi_15.jpg"
+            "harga": 50000,
+            "gambar": "https://www.masakapahariini.com/wp-content/uploads/2019/01/udang-bakar-kecap.jpg"
         },
         {
             "id": "11",
             "nama": "Udang Saos",
-            "harga": 53000,
-            "gambar": "https://selerasa.com/wp-content/uploads/2015/08/images_ikan_resep_cumi_15.jpg"
+            "harga": 67000,
+            "gambar": "https://i1.wp.com/masakanmama.com/wp-content/uploads/2020/01/Resep-Udang-Saus-Padang-Istimewa.jpg?w=840&ssl=1"
         },
         {
             "id": "12",
             "nama": "Udang Mayo",
-            "harga": 53000,
-            "gambar": "https://selerasa.com/wp-content/uploads/2015/08/images_ikan_resep_cumi_15.jpg"
+            "harga": 48000,
+            "gambar": "https://selerasa.com/wp-content/uploads/2015/07/images_ikan_resep_udang_19-udang-saus-mayonaise.jpg"
         },
         {
             "id": "13",
             "nama": "Iced Tea",
-            "harga": 53000,
-            "gambar": "https://selerasa.com/wp-content/uploads/2015/08/images_ikan_resep_cumi_15.jpg"
+            "harga": 5000,
+            "gambar": "https://lh3.googleusercontent.com/proxy/X104LvMl0lasfa-03rtfSPCC_cxCVsZkAk0Jc7A_JYL9PpLa4308haACI6bt5OtwMQ8zdUFTZDEnUiuEm_OoW_-XSwkCY8DqFiux9DE"
         },
         {
             "id": "14",
             "nama": "Es Jeruk Nipis",
-            "harga": 53000,
-            "gambar": "https://selerasa.com/wp-content/uploads/2015/08/images_ikan_resep_cumi_15.jpg"
+            "harga": 5000,
+            "gambar": "https://merahputih.com/media/2c/2d/49/2c2d4966096c41b804dbc7c36cf2c5c8.jpg"
         },
         {
             "id": "15",
             "nama": "Nasi Putih",
-            "harga": 53000,
-            "gambar": "https://selerasa.com/wp-content/uploads/2015/08/images_ikan_resep_cumi_15.jpg"
+            "harga": 5000,
+            "gambar": "https://img.okeinfo.net/content/2019/11/18/481/2131253/kurangi-makan-nasi-putih-tak-cegah-diabetes-jika-masih-doyan-konsumsi-ini-N7WBxoNMey.jpg"
         }
     ]
 }

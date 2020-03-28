@@ -1,6 +1,8 @@
 import 'package:flushbar/flushbar.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:flutter_image/network.dart';
+import 'package:flutter_staggered_grid_view/flutter_staggered_grid_view.dart';
 import 'package:restoran/core/utils/utils.dart';
 import 'package:restoran/features/menu/domain/entities/datum.dart';
 import 'package:restoran/features/menu/presentation/bloc/bloc.dart';
@@ -30,16 +32,23 @@ class _HomeMenuState extends State<HomeMenu> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      key: globalKey,
+      // key: globalKey,
       appBar: AppBar(
         backgroundColor: Colors.white,
         centerTitle: true,
         title: Text(
           "Restoku",
           style: TextStyle(
-            color: Colors.black,
+            color: Colors.grey,
             fontWeight: FontWeight.bold,
-            fontSize: 16,
+            fontSize: 20,
+          ),
+        ),
+        bottom: PreferredSize(
+          preferredSize: Size.fromHeight(4),
+          child: Container(
+            height: 4,
+            color: Colors.grey,
           ),
         ),
         actions: <Widget>[
@@ -56,12 +65,13 @@ class _HomeMenuState extends State<HomeMenu> {
               );
             },
             child: Padding(
-              padding: const EdgeInsets.all(16),
+              padding: const EdgeInsets.all(12),
               child: Stack(
                 children: <Widget>[
                   new Icon(
                     Icons.shopping_cart,
                     color: Colors.grey,
+                    size: 30,
                   ),
                   new Positioned(
                     right: 0,
@@ -72,14 +82,14 @@ class _HomeMenuState extends State<HomeMenu> {
                         borderRadius: BorderRadius.circular(6),
                       ),
                       constraints: BoxConstraints(
-                        minWidth: 12,
-                        minHeight: 12,
+                        minWidth: 14,
+                        minHeight: 14,
                       ),
                       child: new Text(
                         data.length.toString(),
                         style: new TextStyle(
                           color: Colors.white,
-                          fontSize: 8,
+                          fontSize: 10,
                         ),
                         textAlign: TextAlign.center,
                       ),
@@ -113,8 +123,17 @@ class _HomeMenuState extends State<HomeMenu> {
                     child: CircularProgressIndicator(),
                   );
                 } else if (state is LoadedState) {
-                  return ListView.builder(
+                  return StaggeredGridView.countBuilder(
+                    padding: EdgeInsets.only(
+                      top: 12,
+                      left: 0,
+                      right: 0,
+                      bottom: 16,
+                    ),
                     shrinkWrap: true,
+                    crossAxisCount: 4,
+                    mainAxisSpacing: 4.0,
+                    crossAxisSpacing: 4.0,
                     itemCount: state.menu.data.length,
                     itemBuilder: (context, i) {
                       return InkWell(
@@ -130,12 +149,81 @@ class _HomeMenuState extends State<HomeMenu> {
                           });
                           showFloatingFlushbar(context);
                         }),
-                        child: ListTile(
-                          title: Text(state.menu.data[i].nama),
+                        child: Card(
+                          clipBehavior: Clip.antiAliasWithSaveLayer,
+                          child: Stack(
+                            children: [
+                              Column(
+                                mainAxisAlignment: MainAxisAlignment.start,
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                mainAxisSize: MainAxisSize.min,
+                                children: <Widget>[
+                                  Image(
+                                    fit: BoxFit.cover,
+                                    image: NetworkImageWithRetry(
+                                        state.menu.data[i].gambar),
+                                  ),
+                                  Flexible(
+                                    child: Padding(
+                                      padding: EdgeInsets.all(8),
+                                      child: Text(
+                                        state.menu.data[i].nama,
+                                        textAlign: TextAlign.start,
+                                        style: TextStyle(
+                                          height: 1.5,
+                                          fontWeight: FontWeight.bold,
+                                        ),
+                                      ),
+                                    ),
+                                  ),
+                                ],
+                              ),
+                              Positioned(
+                                top: 5,
+                                left: 0,
+                                child: Container(
+                                  color: Colors.green.withOpacity(.7),
+                                  child: Padding(
+                                    padding: const EdgeInsets.all(8.0),
+                                    child: Text(
+                                      utils.convertCurrency(
+                                          state.menu.data[i].harga),
+                                      style: TextStyle(color: Colors.white),
+                                    ),
+                                  ),
+                                ),
+                              ),
+                            ],
+                          ),
                         ),
                       );
                     },
+                    staggeredTileBuilder: (int index) =>
+                        new StaggeredTile.fit(2),
                   );
+                  // return ListView.builder(
+                  //   shrinkWrap: true,
+                  //   itemCount: state.menu.data.length,
+                  //   itemBuilder: (context, i) {
+                  //     return InkWell(
+                  //       onTap: (() {
+                  //         setState(() {
+                  //           data.add(Datum(
+                  //             id: state.menu.data[i].id,
+                  //             nama: state.menu.data[i].nama,
+                  //             harga: state.menu.data[i].harga,
+                  //             gambar: "",
+                  //           ));
+                  //           jumlahHarga += state.menu.data[i].harga;
+                  //         });
+                  //         showFloatingFlushbar(context);
+                  //       }),
+                  //       child: ListTile(
+                  //         title: Text(state.menu.data[i].nama),
+                  //       ),
+                  //     );
+                  //   },
+                  // );
                 } else {
                   return Container();
                 }

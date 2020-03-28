@@ -29,6 +29,8 @@ dependencies:
       url: https://github.com/AndreHaueisen/flushbar.git
       ref: 13c55a8
   money2: ^1.3.0
+  flutter_staggered_grid_view: ^0.3.0
+  flutter_image: ^3.0.0
 
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
