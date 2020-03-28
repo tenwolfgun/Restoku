@@ -3,12 +3,12 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_image/network.dart';
 import 'package:flutter_staggered_grid_view/flutter_staggered_grid_view.dart';
-import 'package:restoran/core/utils/utils.dart';
-import 'package:restoran/features/menu/domain/entities/datum.dart';
-import 'package:restoran/features/menu/presentation/bloc/bloc.dart';
-import 'package:restoran/features/menu/presentation/pages/order_detail.dart';
 
+import '../../../../core/utils/utils.dart';
 import '../../../../injection_container.dart';
+import '../../domain/entities/datum.dart';
+import '../bloc/bloc.dart';
+import 'order_detail.dart';
 
 class HomeMenu extends StatefulWidget {
   @override

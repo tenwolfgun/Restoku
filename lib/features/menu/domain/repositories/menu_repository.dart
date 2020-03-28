@@ -1,4 +1,4 @@
-import 'package:restoran/features/menu/domain/entities/menu.dart';
+import '../entities/menu.dart';
 
 abstract class MenuRepository {
   Future<Menu> getMenu();

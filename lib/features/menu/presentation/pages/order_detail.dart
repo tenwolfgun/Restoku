@@ -1,9 +1,9 @@
 import 'package:flushbar/flushbar.dart';
 import 'package:flutter/material.dart';
-import 'package:restoran/core/utils/utils.dart';
-import 'package:restoran/features/menu/domain/entities/datum.dart';
-import 'package:restoran/features/menu/domain/entities/menu.dart';
-import 'package:restoran/features/menu/presentation/pages/home_menu.dart';
+
+import '../../../../core/utils/utils.dart';
+import '../../domain/entities/datum.dart';
+import 'home_menu.dart';
 
 class OrderDetail extends StatefulWidget {
   final List<Datum> data;

@@ -21,9 +21,7 @@ dependencies:
     sdk: flutter
   flutter_bloc: ^3.2.0
   equatable: ^1.1.1
-  moor: ^2.4.2
   get_it: ^4.0.1
-  shared_preferences: ^0.5.6+3
   flushbar:
     git:
       url: https://github.com/AndreHaueisen/flushbar.git

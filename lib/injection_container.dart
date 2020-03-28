@@ -1,11 +1,11 @@
 import 'package:get_it/get_it.dart';
-import 'package:restoran/core/utils/utils.dart';
-import 'package:restoran/features/menu/data/repositories/menu_repository_impl.dart';
-import 'package:restoran/features/menu/domain/usecases/get_menu.dart';
-import 'package:restoran/features/menu/presentation/bloc/menu_bloc.dart';
 
+import 'core/utils/utils.dart';
 import 'features/menu/data/datasources/menu_data_source.dart';
+import 'features/menu/data/repositories/menu_repository_impl.dart';
 import 'features/menu/domain/repositories/menu_repository.dart';
+import 'features/menu/domain/usecases/get_menu.dart';
+import 'features/menu/presentation/bloc/menu_bloc.dart';
 
 var sl = GetIt.instance;
 

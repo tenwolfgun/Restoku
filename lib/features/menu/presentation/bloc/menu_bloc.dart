@@ -1,10 +1,10 @@
 import 'dart:async';
+
 import 'package:bloc/bloc.dart';
-import 'package:restoran/features/menu/domain/entities/datum.dart';
-import 'package:restoran/features/menu/domain/entities/menu.dart';
-import 'package:restoran/features/menu/domain/usecases/get_menu.dart';
-import './bloc.dart';
 import 'package:meta/meta.dart';
+
+import './bloc.dart';
+import '../../domain/usecases/get_menu.dart';
 
 class MenuBloc extends Bloc<MenuEvent, MenuState> {
   final GetMenu getMenu;

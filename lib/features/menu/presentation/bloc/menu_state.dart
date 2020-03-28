@@ -1,8 +1,8 @@
 import 'package:equatable/equatable.dart';
 import 'package:meta/meta.dart';
-import 'package:restoran/features/menu/domain/entities/datum.dart';
-import 'package:restoran/features/menu/domain/entities/menu.dart';
-import 'package:restoran/features/menu/presentation/bloc/bloc.dart';
+
+import '../../domain/entities/datum.dart';
+import '../../domain/entities/menu.dart';
 
 abstract class MenuState extends Equatable {
   const MenuState();

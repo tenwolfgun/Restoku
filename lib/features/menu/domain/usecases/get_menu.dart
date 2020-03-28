@@ -1,6 +1,7 @@
-import 'package:restoran/features/menu/domain/entities/menu.dart';
-import 'package:restoran/features/menu/domain/repositories/menu_repository.dart';
 import 'package:meta/meta.dart';
+
+import '../entities/menu.dart';
+import '../repositories/menu_repository.dart';
 
 class GetMenu {
   final MenuRepository repository;
