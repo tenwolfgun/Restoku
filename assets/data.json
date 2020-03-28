@@ -1,0 +1,94 @@
+{
+    "data": [
+        {
+            "id": "1",
+            "nama": "Cumi Tepung",
+            "harga": 45000,
+            "gambar": "https://i.pinimg.com/originals/4c/34/eb/4c34ebac67877fa6c89a1633a875537a.jpg"
+        },
+        {
+            "id": "2",
+            "nama": "Cumi Bakar",
+            "harga": 53000,
+            "gambar": "https://selerasa.com/wp-content/uploads/2015/08/images_ikan_resep_cumi_15.jpg"
+        },
+        {
+            "id": "3",
+            "nama": "Cumi Cabe Goreng",
+            "harga": 70000,
+            "gambar": "https://i.pinimg.com/originals/4c/34/eb/4c34ebac67877fa6c89a1633a875537a.jpg"
+        },
+        {
+            "id": "4",
+            "nama": "Cah Kailan",
+            "harga": 53000,
+            "gambar": "https://selerasa.com/wp-content/uploads/2015/08/images_ikan_resep_cumi_15.jpg"
+        },
+        {
+            "id": "5",
+            "nama": "Tahu Goreng",
+            "harga": 45000,
+            "gambar": "https://i.pinimg.com/originals/4c/34/eb/4c34ebac67877fa6c89a1633a875537a.jpg"
+        },
+        {
+            "id": "6",
+            "nama": "Cah Tauge",
+            "harga": 53000,
+            "gambar": "https://selerasa.com/wp-content/uploads/2015/08/images_ikan_resep_cumi_15.jpg"
+        },
+        {
+            "id": "7",
+            "nama": "Kerang Bambu Asam Manis",
+            "harga": 45000,
+            "gambar": "https://i.pinimg.com/originals/4c/34/eb/4c34ebac67877fa6c89a1633a875537a.jpg"
+        },
+        {
+            "id": "8",
+            "nama": "Kepiting Saus Padang",
+            "harga": 53000,
+            "gambar": "https://selerasa.com/wp-content/uploads/2015/08/images_ikan_resep_cumi_15.jpg"
+        },
+        {
+            "id": "9",
+            "nama": "Gurame Asam Pedas",
+            "harga": 45000,
+            "gambar": "https://i.pinimg.com/originals/4c/34/eb/4c34ebac67877fa6c89a1633a875537a.jpg"
+        },
+        {
+            "id": "10",
+            "nama": "Udang Bakar",
+            "harga": 53000,
+            "gambar": "https://selerasa.com/wp-content/uploads/2015/08/images_ikan_resep_cumi_15.jpg"
+        },
+        {
+            "id": "11",
+            "nama": "Udang Saos",
+            "harga": 53000,
+            "gambar": "https://selerasa.com/wp-content/uploads/2015/08/images_ikan_resep_cumi_15.jpg"
+        },
+        {
+            "id": "12",
+            "nama": "Udang Mayo",
+            "harga": 53000,
+            "gambar": "https://selerasa.com/wp-content/uploads/2015/08/images_ikan_resep_cumi_15.jpg"
+        },
+        {
+            "id": "13",
+            "nama": "Iced Tea",
+            "harga": 53000,
+            "gambar": "https://selerasa.com/wp-content/uploads/2015/08/images_ikan_resep_cumi_15.jpg"
+        },
+        {
+            "id": "14",
+            "nama": "Es Jeruk Nipis",
+            "harga": 53000,
+            "gambar": "https://selerasa.com/wp-content/uploads/2015/08/images_ikan_resep_cumi_15.jpg"
+        },
+        {
+            "id": "15",
+            "nama": "Nasi Putih",
+            "harga": 53000,
+            "gambar": "https://selerasa.com/wp-content/uploads/2015/08/images_ikan_resep_cumi_15.jpg"
+        }
+    ]
+}
